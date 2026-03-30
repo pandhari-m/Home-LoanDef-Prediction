@@ -41,12 +41,16 @@
    -High credit-to-income ratio  
   -Strong predictors:  
    -External credit scores (EXT_SOURCE)  
-   -Payment behavior  
+   -Payment behavior
+
+---
 - Models Used  
   Logistic Regression  
   Random Forest  
   XGBoost  
-  LightGBM (Best Model)  
+  LightGBM (Best Model)
+
+----  
 - Model Performance  
  Model	                        ROC-AUC  
  Logistic Regression             0.62  
