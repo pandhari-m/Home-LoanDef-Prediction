@@ -108,14 +108,14 @@
 ----  
 - Project Structure  
   Loan-Default-Prediction/  
-  │ 
-  ├── data/ 
-  ├── notebooks/ 
-  ├── model/ 
-  ├── loan_model.pkl 
-  ├── scaler.pkl 
-  ├── threshold.pkl 
-  ├── README.md
+  │  
+  ├── data/  
+  ├── notebooks/  
+  ├── model/  
+  ├── loan_model.pkl  
+  ├── scaler.pkl  
+  ├── threshold.pkl  
+  ├── README.md  
 
 -----
 
