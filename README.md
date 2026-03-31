@@ -1,18 +1,20 @@
-- Loan Default Prediction & Risk Segmentation
+• Loan Default Prediction & Risk Segmentation  
+---  
   
-- Project Overview  
+• Project Overview  
+---
 
   This project aims to build a Machine Learning model to predict whether a customer is likely to default on a loan. It helps financial institutions make data-driven loan approval decisions and reduce credit risk.
 
------
-- Objective  
+• Objective  
+---
  -Identify customers eligible for loan approval  
  -Detect potential defaulters  
  -Perform customer risk segmentation  
  -Support business decision-making in lending
-
--------  
-- Dataset  
+ 
+• Dataset  
+---
 -The project uses multiple datasets:  
   -application_train.csv – Customer application data  
   -bureau.csv – Credit history from other institutions  
@@ -22,8 +24,8 @@
   -credit_card_balance.csv – Credit card usage  
   -installments_payments.csv – Repayment history
 
------  
-- Data Preprocessing
+• Data Preprocessing  
+---
   -Merged multiple datasets using keys (SK_ID_CURR, SK_ID_BUREAU)  
   -Handled missing values (removed columns with >50% missing)  
   -Feature Engineering:  
@@ -32,9 +34,8 @@
   -Encoded categorical variables  
   -Cleaned and prepared dataset for modeling
 
-----  
-
-- Exploratory Data Analysis  
+• Exploratory Data Analysis  
+---
   -Dataset is imbalanced (~8% defaulters)  
   -Higher default risk observed in:  
    -Low income customers  
@@ -43,70 +44,70 @@
    -External credit scores (EXT_SOURCE)  
    -Payment behavior
 
+• Models Used  
 ---
-- Models Used  
   Logistic Regression  
   Random Forest  
   XGBoost  
   LightGBM (Best Model)
-
-----  
-- Model Performance  
+ 
+• Model Performance  
+---
  Model	                        ROC-AUC  
  Logistic Regression             0.62  
  Random Forest	                 0.73  
  XGBoost	                       0.76  
  LightGBM	                       0.76
 
-----
-
-- Threshold Optimization  
+• Threshold Optimization  
+---
   Used Youden’s J Statistic  
   Best Threshold ≈ 0.498
   
------  
-- Evaluation Metrics  
+• Evaluation Metrics  
+---
   Accuracy: 73%  
   Approval Rate: 70%  
   Default Detection Rate: 67%  
   Precision (Default): 18%
 
-----
-- Key Insights  
+• Key Insights  
+---
   Model successfully detects majority of defaulters  
   Maintains high loan approval rate  
   External credit scores are most important features  
   Financial stability strongly impacts loan approval
-  
-------  
-- Customer Risk Segmentation  
+   
+• Customer Risk Segmentation  
+---
   Segment	Description  
    Low Risk	Safe customers → Approve  
    Medium Risk	Moderate → Manual review  
-   High Risk	Risky → Reject
------  
-- Business Recommendations    
+   High Risk	Risky → Reject  
+   
+• Business Recommendations  
+---
    Approve low-risk customers  
    Apply stricter policies for medium-risk  
    Reject or secure high-risk customers  
    Use model for automated credit decisioning
-
-----  
-- Business Impact  
+ 
+• Business Impact  
+---
   Reduces financial losses    
   Improves approval strategy  
   Enables risk-based decision making  
-
-----  
-- Technologies Used  
+ 
+• Technologies Used  
+---
   Python  
   Pandas, NumPy  
   Scikit-learn  
   LightGBM  
   Matplotlib, Seaborn
-
-----  
-- Project Structure  
+ 
+• Project Structure  
+---
   Loan-Default-Prediction/  
   │  
   ├── data/  
@@ -117,8 +118,7 @@
   ├── threshold.pkl  
   ├── README.md  
 
------
-
-- Author  
+• Author  
+---
   Pandhari Mane  
   Data Science Enthusiast  
